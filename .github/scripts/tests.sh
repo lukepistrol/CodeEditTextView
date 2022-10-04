@@ -18,4 +18,4 @@ set -o pipefail && arch -"${ARCH}" xcodebuild  \
            -disableAutomaticPackageResolution \
            -derivedDataPath ".build" \
            -destination "platform=macos,arch=${ARCH}" \
-           test | xcpretty
+           test
