@@ -16,5 +16,6 @@ export LC_CTYPE=en_US.UTF-8
 set -o pipefail && arch -"${ARCH}" xcodebuild  \
            -scheme CodeEditTextView \
            -derivedDataPath "~/Library/Developer/Xcode/DerivedData/" \
+           -skipPackageUpdates \
            -destination "platform=macos,arch=${ARCH}" \
            test
