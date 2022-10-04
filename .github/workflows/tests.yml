@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v1
       - uses: actions/cache@v3
         with:
-          path: .build
+          path: ~/Library/Developer/Xcode/DerivedData/**/SourcePackages/checkouts
           key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
           restore-keys: |
             ${{ runner.os }}-spm-
