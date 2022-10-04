@@ -17,5 +17,6 @@ set -o pipefail && arch -"${ARCH}" xcodebuild  \
            -scheme CodeEditTextView \
            -derivedDataPath "~/Library/Developer/Xcode/DerivedData/" \
            -skipPackageUpdates \
+           -disableAutomaticPackageResolution \
            -destination "platform=macos,arch=${ARCH}" \
            test
